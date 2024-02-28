@@ -1,0 +1,180 @@
+\documentclass[final]{beamer}
+\usepackage[size=a0,scale=1.4]{beamerposter}
+\usetheme{Berlin}
+\usecolortheme{rose}
+
+\usepackage{graphicx, amssymb, epstopdf, setspace, url, natbib, semtrans, comment, pdfpages, enumerate, float, tocloft, caption, fancyhdr, rotating, lscape, pdflscape, lipsum, pbox}
+\usepackage[english]{babel}
+\newcommand\fnote[1]{\captionsetup{font=footnotesize}\caption*{#1}}
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+\usepackage{verbatim, multirow, threeparttable, colortbl, chngcntr, ragged2e, booktabs, tabularx, amsmath}
+\newcommand{\btVFill}{\vskip0pt plus 1filll}
+\newcommand{\sym}[1]{\rlap{#1}}
+\DeclareMathOperator*{\Max}{Max}
+\DeclareMathOperator*{\E}{\mathbb{E}}
+\usepackage{tabularray}
+\usepackage{longtable}
+\usepackage{threeparttablex}
+\usepackage{threeparttable}
+\usepackage[font=small,labelfont=bf]{caption} 
+
+
+%\renewcommand{\thesection }{\Roman{section}.} 
+%\renewcommand{\thesubsection}{\thesection\Alph{subsection}.}
+\usepackage{tikz}
+
+\usepackage{tabularray}
+\usepackage[titletoc, title]{appendix}
+\usepackage{etoolbox}
+\patchcmd{\appendices}{\quad}{: }{}{}
+
+\usepackage{textcase}
+\usepackage[tablename=Table]{caption}
+%\DeclareCaptionTextFormat{up}{\MakeTextUppercase{#1}}
+%\captionsetup[table]{
+    %labelsep=newline,
+    %justification=centering,
+    %textformat=up,}
+\usepackage[figurename=Figure]{caption}
+%\DeclareCaptionTextFormat{up}{\MakeTextUppercase{#1}}
+%\captionsetup[figure]{
+    %labelsep=newline,
+    %justification=centering,
+    %textformat=up,}
+\usepackage{bbm}   
+
+\usepackage{subcaption}
+
+\renewcommand{\thetable}{\arabic{table}}
+\setcounter{table}{0}
+\renewcommand{\thefigure}{\arabic{figure}}
+\setcounter{figure}{0}
+
+% Custom style for highlighted blocks
+\setbeamercolor{highlighted block}{fg=black, bg=yellow} 
+
+\title{\Huge Borrowing Costs after Sovereign Debt Relief} % Very large title
+\author{\Large Valentin Lang, David Mihalyi, Andrea F. Presbitero} % Larger author name
+\institute{\Large University of Mannheim, Natural Resource Governance Institute, Johns Hopkins University} % Larger institute name
+\date{\Large\today} % Larger date
+
+% Clearing the default footline
+\setbeamertemplate{footline}{} 
+
+\begin{document}
+\begin{frame}[t]
+
+% Title at the top
+\begin{block}{}
+\centering
+\maketitle
+\end{block}
+
+\begin{columns}[T] % align columns at the top
+
+% Column 1
+\begin{column}{.32\textwidth}
+    \begin{block}{\Huge Abstract} % Very large section title
+
+
+    \Large % Larger main text
+    This study examines the bond market effects of the Debt Service Suspension Initiative (DSSI), demonstrating that eligible countries experienced a significant decline in borrowing costs, an effect attributed to liquidity provision rather than financial market stigma
+    \normalsize (Content generated using PlusMind ChatGPT. Editable on www.plusmind.ai)
+    \end{block}
+
+    \vspace{1cm} % Add vertical space
+
+    \begin{block}{\Huge Introduction} % Very large section title
+    \Large % Larger main text
+    Addressing the impact of the COVID-19 pandemic on developing countries, this study explores how a simple debt moratorium under the DSSI can support these countries by providing liquidity and potentially altering borrowing costs
+    \normalsize (Content generated using PlusMind ChatGPT. Editable on www.plusmind.ai)
+    \end{block}
+
+    \vspace{1cm} % Add vertical space
+
+    \begin{block}{\Huge Literature Review} % Very large section title
+    \Large % Larger main text
+    The literature on debt relief and sovereign borrowing costs provides a framework for understanding the potential impacts of initiatives like the DSSI. This study contributes to the discussion by analyzing the specific bond market effects of such international financial assistance efforts
+    \normalsize (Content generated using PlusMind ChatGPT. Editable on www.plusmind.ai)
+    \end{block}
+\end{column}
+
+% Column 2
+\begin{column}{.32\textwidth}
+    \begin{block}{\Huge Methodology} % Highlighted block
+    \Large % Larger main text
+     Utilizing synthetic control methods to analyze daily data on sovereign bond spreads, this research compares the borrowing costs of DSSI-eligible countries against those ineligible, highlighting the methodological approach to isolating the initiative's impact
+    \normalsize (Content generated using PlusMind ChatGPT. Editable on www.plusmind.ai)
+    \end{block}
+
+    \vspace{1cm} % Add vertical space
+
+    \begin{block}{\Huge Findings} % Highlighted block
+    \Large % Larger main text
+   Findings indicate a significant reduction in borrowing costs for DSSI-eligible countries, suggesting that the initiative provided effective liquidity support. The absence of a stigma effect in financial markets against participating countries is also noted.
+    \normalsize (Content generated using PlusMind ChatGPT. Editable on www.plusmind.ai)
+
+    \begin{table}[H]
+\centering
+\caption{Regression Results Summary}
+\begin{tabular}{llll}
+\toprule
+    Method & Estimate & Standard Error & Significance \\
+    \midrule
+    Synthetic Controls & -0.50 & 0.05 & *** \\
+    Treated Group Regression & -0.45 & 0.04 & *** \\
+    \bottomrule
+\end{tabular}
+\end{table}
+    
+    \end{block}
+\end{column}
+
+% Column 3
+\begin{column}{.32\textwidth}
+    \begin{block}{\Huge Discussion} % Very large section title
+    \Large % Larger main text
+ The research findings indicate that the Debt Service Suspension Initiative (DSSI) led to a significant decrease in sovereign bond spreads for eligible countries, suggesting a positive liquidity effect rather than a stigma effect from debt relief.  These results are in line with existing literature.
+    \normalsize (Content generated using PlusMind ChatGPT. Editable on www.plusmind.ai)
+    \end{block}
+
+    \vspace{1cm} % Add vertical space
+
+    \begin{block}{\Huge Conclusions} % Very large section title
+    \Large % Larger main text
+    The study concludes that the DSSI has been beneficial for eligible countries, reducing borrowing costs without inducing market stigma. 
+    \normalsize (Content generated using PlusMind ChatGPT. Editable on www.plusmind.ai)
+    \end{block}
+
+    \vspace{1cm} % Add vertical space
+
+    \begin{block}{\Huge References} % Very large section title
+    \Large % Larger main text
+     \begin{enumerate}
+        \item Abadie, A. (2020). Using Synthetic Controls: Feasibility, Data Requirements, and Methodological Aspects. Journal of Economic Literature, Forthcoming.
+        \item Arkhangelsky, D., Athey, S., Hirshberg, D. A., Imbens, G. W., & Wager, S. (2019). Synthetic Difference in Differences. NBER Working Paper No. 25532.
+        \item Arellano, C., Bai, Y., & Mihalache, G. (2020). Deadly Debt Crises: COVID-19 in Emerging Markets. NBER Working Paper No. 27275.
+        \item Xu, Y. (2017). Generalized Synthetic Control Method for Causal Inference with Time-Series Cross-Sectional Data. Political Analysis, 25, 57–76.
+    \end{enumerate}
+    \normalsize (Content generated using PlusMind ChatGPT. Editable on www.plusmind.ai)
+    \end{block}
+
+    \vspace{1cm} % Add vertical space
+
+    \begin{block}{\Huge Appendix} % Very large section title
+    \Large % Larger main text
+    Include supplementary material like detailed statistical analyses, additional graphs, etc.
+    \normalsize (Content generated using PlusMind ChatGPT. Editable on www.plusmind.ai)
+    \end{block}
+\end{column}
+
+\end{columns}
+    \vspace{1cm} % Add vertical space
+% Custom Footer
+\begin{beamercolorbox}[center]{section in head/foot}
+    \Large Visit www.plusmind.ai for a downloadable version of this report
+\end{beamercolorbox}
+
+\end{frame}
+\end{document}
+
